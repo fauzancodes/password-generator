@@ -1,0 +1,56 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*bootstrap color adjustment*/
+$primary: #006bff !important;
+$primary-dark: #004bb3 !important;
+$dark: #1d1d1d !important;
+$dark-dark: #000000 !important;
+$light: #ffffff !important;
+$secondary: #e0e0e0 !important;
+.bg-primary, .btn-primary {background-color: $primary;}
+.btn-primary {color: $light;}
+.btn-primary:hover {
+    background-color: $primary-dark;
+    color: $light;
+}
+.btn-outline-primary {
+    border-color: $primary;
+    color: $primary;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: $primary;
+    color: $light;
+}
+.btn-outline-light {
+    border-color: $light;
+    color: $light;
+}
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background-color: $light;
+    color: $dark-dark;
+}
+a {color: $primary;}
+a:hover {color: $primary-dark;}
+.bg-dark {background-color: $dark;}
+.bg-secondary {background-color: $secondary;}
+.btn-primary, a, .btn-outline-light {transition-duration: 0.25s;}
+/*--------------------*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {background-color: #e0e0e0;}
+::-webkit-scrollbar-thumb {background-color: #006bff;}
+::-webkit-scrollbar-thumb:hover {background-color: #004bb3;}
+.neuromorphism-secondary {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #b3b3b3,
+                -5px -5px 10px #ffffff;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
